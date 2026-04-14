@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neta Final Project Websites</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe6;
+        --card: rgba(255, 255, 255, 0.8);
+        --text: #1f2933;
+        --muted: #52606d;
+        --accent: #b44d2a;
+        --accent-dark: #8f3d21;
+        --border: rgba(31, 41, 51, 0.12);
+        --shadow: 0 20px 45px rgba(49, 33, 18, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(180, 77, 42, 0.16), transparent 30%),
+          radial-gradient(circle at right, rgba(66, 153, 225, 0.16), transparent 28%),
+          linear-gradient(180deg, #f8f5ef 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(960px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 4rem 0 5rem;
+      }
+
+      .hero {
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 0.95;
+      }
+
+      p {
+        margin: 0;
+        max-width: 55rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .card {
+        display: block;
+        padding: 1.2rem;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: var(--card);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+        text-decoration: none;
+        color: inherit;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .card:hover,
+      .card:focus-visible {
+        transform: translateY(-4px);
+        border-color: rgba(180, 77, 42, 0.35);
+        box-shadow: 0 26px 50px rgba(49, 33, 18, 0.18);
+      }
+
+      .label {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+        padding: 0.3rem 0.55rem;
+        border-radius: 999px;
+        background: rgba(180, 77, 42, 0.12);
+        color: var(--accent-dark);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.15rem;
+      }
+
+      .path {
+        margin-top: 0.9rem;
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      footer {
+        margin-top: 2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>Neta Final Project Websites</h1>
+        <p>
+          This Cloudflare deployment publishes the student static websites collected in this
+          repository. Start from one of the project pages below.
+        </p>
+      </section>
+
+      <section class="grid" aria-label="Project websites">
+        <a class="card" href="/sommeiller/first-year/about-us-1-gaia_giulia_alessio/">
+          <span class="label">Sommeiller · First year</span>
+          <h2>About Us 1</h2>
+          <p>Project by Gaia, Giulia, and Alessio.</p>
+          <div class="path">Open site</div>
+        </a>
+
+        <a class="card" href="/sommeiller/first-year/about-us-6-daniele-rodrigo-jaden/">
+          <span class="label">Sommeiller · First year</span>
+          <h2>About Us 6</h2>
+          <p>Project by Daniele, Rodrigo, and Jaden.</p>
+          <div class="path">Open site</div>
+        </a>
+
+        <a class="card" href="/sommeiller/first-year/homepage-4-omar_giada_elisa_b/">
+          <span class="label">Sommeiller · First year</span>
+          <h2>Homepage 4</h2>
+          <p>Project by Omar, Giada, and Elisa B.</p>
+          <div class="path">Open site</div>
+        </a>
+
+        <a class="card" href="/sommeiller/first-year/about-us-5-davide-riccardo-carlotta/about.html">
+          <span class="label">Sommeiller · First year</span>
+          <h2>About Us 5</h2>
+          <p>Project by Davide, Riccardo, and Carlotta.</p>
+          <div class="path">Open page</div>
+        </a>
+
+        <a class="card" href="/sommeiller/first-year/about-us-3-diandra_ludovica_nicolo/about.html">
+          <span class="label">Sommeiller · First year</span>
+          <h2>About Us 3</h2>
+          <p>Project by Diandra, Ludovica, and Nicolo.</p>
+          <div class="path">Open page</div>
+        </a>
+
+        <a class="card" href="/sommeiller/first-year/about-us-2-nicole_elisa_p_daniela/aboutuse.html">
+          <span class="label">Sommeiller · First year</span>
+          <h2>About Us 2</h2>
+          <p>Project by Nicole, Elisa P, and Daniela.</p>
+          <div class="path">Open page</div>
+        </a>
+      </section>
+
+      <footer>
+        Static hosting is configured through <code>wrangler.toml</code> at the repository root.
+      </footer>
+    </main>
+  </body>
+  </html>
