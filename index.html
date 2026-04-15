@@ -63,6 +63,30 @@
         margin-top: 2rem;
       }
 
+      .course-section {
+        margin-top: 2.5rem;
+      }
+
+      .course-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .course-title {
+        margin: 0;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+      }
+
+      .course-meta {
+        color: var(--accent-dark);
+        font-size: 0.95rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
       .card {
         display: block;
         padding: 1.2rem;
@@ -119,58 +143,101 @@
       <section class="hero">
         <h1>Neta Final Project Websites</h1>
         <p>
-          This Cloudflare deployment publishes the student static websites collected in this
-          repository. Start from one of the project pages below.
+          This website contains all the final projects from the Net@ Students year 2025-2026.
         </p>
       </section>
 
-      <section class="grid" aria-label="Project websites">
-        <a class="card" href="/sommeiller/first-year/about-us-1-gaia_giulia_alessio/">
-          <span class="label">Sommeiller · First year</span>
-          <h2>About Us 1</h2>
-          <p>Project by Gaia, Giulia, and Alessio.</p>
-          <div class="path">Open site</div>
-        </a>
+      <section class="course-section" aria-labelledby="first-year-title">
+        <div class="course-header">
+          <h2 class="course-title" id="first-year-title">Sommeiller First Year</h2>
+          <div class="course-meta">6 projects</div>
+        </div>
 
-        <a class="card" href="/sommeiller/first-year/about-us-6-daniele-rodrigo-jaden/">
-          <span class="label">Sommeiller · First year</span>
-          <h2>About Us 6</h2>
-          <p>Project by Daniele, Rodrigo, and Jaden.</p>
-          <div class="path">Open site</div>
-        </a>
+        <div class="grid" aria-label="Sommeiller first-year projects">
+          <a class="card" href="/sommeiller/first-year/about-us-1-gaia_giulia_alessio/">
+            <span class="label">Sommeiller · First year</span>
+            <h2>About Us 1</h2>
+            <p>Gaia, Giulia, and Alessio.</p>
+            <div class="path">Open site</div>
+          </a>
 
-        <a class="card" href="/sommeiller/first-year/homepage-4-omar_giada_elisa_b/">
-          <span class="label">Sommeiller · First year</span>
-          <h2>Homepage 4</h2>
-          <p>Project by Omar, Giada, and Elisa B.</p>
-          <div class="path">Open site</div>
-        </a>
+          <a class="card" href="/sommeiller/first-year/about-us-2-nicole_elisa_p_daniela/about.html">
+            <span class="label">Sommeiller · First year</span>
+            <h2>About Us 2</h2>
+            <p>Nicole, Elisa P, and Daniela.</p>
+            <div class="path">Open page</div>
+          </a>
 
-        <a class="card" href="/sommeiller/first-year/about-us-5-davide-riccardo-carlotta/about.html">
-          <span class="label">Sommeiller · First year</span>
-          <h2>About Us 5</h2>
-          <p>Project by Davide, Riccardo, and Carlotta.</p>
-          <div class="path">Open page</div>
-        </a>
+          <a class="card" href="/sommeiller/first-year/about-us-3-diandra_ludovica_nicolo/about.html">
+            <span class="label">Sommeiller · First year</span>
+            <h2>About Us 3</h2>
+            <p>Diandra, Ludovica, and Nicolo.</p>
+            <div class="path">Open page</div>
+          </a>
 
-        <a class="card" href="/sommeiller/first-year/about-us-3-diandra_ludovica_nicolo/about.html">
-          <span class="label">Sommeiller · First year</span>
-          <h2>About Us 3</h2>
-          <p>Project by Diandra, Ludovica, and Nicolo.</p>
-          <div class="path">Open page</div>
-        </a>
+          <a class="card" href="/sommeiller/first-year/homepage-4-omar_giada_elisa_b/">
+            <span class="label">Sommeiller · First year</span>
+            <h2>Homepage 4</h2>
+            <p>Omar, Giada, and Elisa B.</p>
+            <div class="path">Open site</div>
+          </a>
 
-        <a class="card" href="/sommeiller/first-year/about-us-2-nicole_elisa_p_daniela/aboutuse.html">
-          <span class="label">Sommeiller · First year</span>
-          <h2>About Us 2</h2>
-          <p>Project by Nicole, Elisa P, and Daniela.</p>
-          <div class="path">Open page</div>
-        </a>
+          <a class="card" href="/sommeiller/first-year/about-us-5-davide-riccardo-carlotta/about.html">
+            <span class="label">Sommeiller · First year</span>
+            <h2>About Us 5</h2>
+            <p>Davide, Riccardo, and Carlotta.</p>
+            <div class="path">Open page</div>
+          </a>
+
+          <a class="card" href="/sommeiller/first-year/about-us-6-daniele-rodrigo-jaden/">
+            <span class="label">Sommeiller · First year</span>
+            <h2>About Us 6</h2>
+            <p>Daniele, Rodrigo, and Jaden.</p>
+            <div class="path">Open site</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="course-section" aria-labelledby="second-year-title">
+        <div class="course-header">
+          <h2 class="course-title" id="second-year-title">Sommeiller Second Year</h2>
+          <div class="course-meta">4 projects</div>
+        </div>
+
+        <div class="grid" aria-label="Sommeiller second-year projects">
+          <a class="card" href="/sommeiller/second-year/Emotionless/">
+            <span class="label">Sommeiller · Second year</span>
+            <h2>Emotionless</h2>
+            <p>Names not listed in the project files.</p>
+            <div class="path">Open site</div>
+          </a>
+
+          <a class="card" href="/sommeiller/second-year/HobbyLoop/">
+            <span class="label">Sommeiller · Second year</span>
+            <h2>HobbyLoop</h2>
+            <p>Names not listed in the project files.</p>
+            <div class="path">Open site</div>
+          </a>
+
+          <a class="card" href="/sommeiller/second-year/SaveUp/">
+            <span class="label">Sommeiller · Second year</span>
+            <h2>SaveUp</h2>
+            <p>Names not listed in the project files.</p>
+            <div class="path">Open site</div>
+          </a>
+
+          <a class="card" href="/sommeiller/second-year/talentos-complete/">
+            <span class="label">Sommeiller · Second year</span>
+            <h2>TalentOS</h2>
+            <p>Names not listed in the project files.</p>
+            <div class="path">Open site</div>
+          </a>
+        </div>
       </section>
 
       <footer>
-        Static hosting is configured through <code>wrangler.toml</code> at the repository root.
-      </footer>
+
+	</footer>
     </main>
   </body>
   </html>
