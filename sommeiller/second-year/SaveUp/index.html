@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaveUp — Save Without Thinking</title>
+  <meta name="description" content="SaveUp rounds up your purchases and automatically saves the change. Build up cash for whatever you want — no effort required." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="public/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="#hero" class="nav-logo">
+          <div class="logo-icon">💰</div>
+          SaveUp
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#who-its-for">Who It's For</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#launch">🚀 Launch</a></li>
+          <li><a href="#cta" class="nav-cta">Get Early Access</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile drawer -->
+      <div class="nav-drawer" id="nav-drawer" role="navigation" aria-label="Mobile navigation">
+        <a href="#problem">The Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#who-its-for">Who It's For</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#launch">🚀 Launch</a>
+        <a href="#cta" class="drawer-cta">Get Early Access →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="section">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span class="dot"></span>
+              Now in Early Access
+            </div>
+            <h1 class="hero-title">
+              Save money<br />
+              <span class="highlight">without trying.</span>
+            </h1>
+            <p class="hero-desc">
+              SaveUp rounds up every purchase and quietly tucks away the change.
+              Even amounts? We save a flat $0.50. That's it — no willpower needed.
+            </p>
+            <div class="hero-actions">
+              <a href="#cta" class="btn-primary">
+                Start Saving Free
+                <span>→</span>
+              </a>
+              <a href="#how-it-works" class="btn-ghost">
+                See how it works
+                <span class="arrow">→</span>
+              </a>
+            </div>
+            <div class="hero-trust">
+              <div class="trust-avatars">
+                <span>JL</span>
+                <span>KM</span>
+                <span>AR</span>
+                <span>SP</span>
+              </div>
+              <span>Join <strong>2,400+</strong> people already saving effortlessly</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-reveal>
+            <div class="phone-mockup">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="phone-header">
+                  <div class="phone-balance-label">Total Saved</div>
+                  <div class="phone-balance">$47.83</div>
+                  <div class="phone-balance-sub">This month · 62 round-ups</div>
+                </div>
+                <div class="phone-divider"></div>
+                <div class="phone-tx-title">Recent Round-Ups</div>
+
+                <div class="phone-tx">
+                  <div class="tx-icon" style="background:#fef3c7;">☕</div>
+                  <div class="tx-info">
+                    <div class="tx-name">Starbucks</div>
+                    <div class="tx-date">Today, 9:14am</div>
+                  </div>
+                  <div class="tx-amount">
+                    <div class="tx-spent">$4.75</div>
+                    <div class="tx-saved">+$0.25</div>
+                  </div>
+                </div>
+
+                <div class="phone-tx">
+                  <div class="tx-icon" style="background:#dcfce7;">🛒</div>
+                  <div class="tx-info">
+                    <div class="tx-name">Whole Foods</div>
+                    <div class="tx-date">Today, 1:02pm</div>
+                  </div>
+                  <div class="tx-amount">
+                    <div class="tx-spent">$23.00</div>
+                    <div class="tx-saved">+$0.50</div>
+                  </div>
+                </div>
+
+                <div class="phone-tx">
+                  <div class="tx-icon" style="background:#ede9fe;">🎮</div>
+                  <div class="tx-info">
+                    <div class="tx-name">Steam</div>
+                    <div class="tx-date">Yesterday</div>
+                  </div>
+                  <div class="tx-amount">
+                    <div class="tx-spent">$14.99</div>
+                    <div class="tx-saved">+$0.01</div>
+                  </div>
+                </div>
+
+                <div class="phone-tx">
+                  <div class="tx-icon" style="background:#fee2e2;">🍕</div>
+                  <div class="tx-info">
+                    <div class="tx-name">Domino's</div>
+                    <div class="tx-date">Yesterday</div>
+                  </div>
+                  <div class="tx-amount">
+                    <div class="tx-spent">$18.40</div>
+                    <div class="tx-saved">+$0.60</div>
+                  </div>
+                </div>
+
+                <div class="phone-fab">🏆 Goal: New AirPods — 67% there!</div>
+              </div>
+
+              <div class="floating-badge">
+                <span class="badge-amount">+$0.25</span>
+                Just saved!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS BAND ===== -->
+    <section id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-reveal>
+            <div class="stat-number" data-count="47" data-suffix="+">0+</div>
+            <div class="stat-label">Average dollars saved per month</div>
+          </div>
+          <div class="stat-item" data-reveal data-delay="100">
+            <div class="stat-number" data-count="2400" data-suffix="+">0+</div>
+            <div class="stat-label">People on the waitlist</div>
+          </div>
+          <div class="stat-item" data-reveal data-delay="200">
+            <div class="stat-number" data-count="0" data-suffix=" effort">0 effort</div>
+            <div class="stat-label">Required from you. Ever.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM ===== -->
+    <section id="problem" class="section">
+      <div class="container">
+        <div class="problem-grid">
+          <div data-reveal>
+            <span class="section-tag">The Problem</span>
+            <h2 class="section-title">Saving money is harder than it should be.</h2>
+            <p class="section-sub">
+              We all want to save — but traditional methods require discipline,
+              planning, and a lot of "I'll start next month" promises that never happen.
+            </p>
+          </div>
+
+          <div class="problem-cards">
+            <div class="problem-card" data-reveal data-delay="0">
+              <div class="card-icon">😩</div>
+              <div>
+                <h4>Willpower doesn't work</h4>
+                <p>Budgeting apps guilt you. Spending limits stress you out. You shouldn't need mental energy just to save a few bucks.</p>
+              </div>
+            </div>
+            <div class="problem-card" data-reveal data-delay="100">
+              <div class="card-icon">🙈</div>
+              <div>
+                <h4>Asking for money is awkward</h4>
+                <p>Whether it's your parents or a friend — always going with your hand out isn't fun. You want independence, not handouts.</p>
+              </div>
+            </div>
+            <div class="problem-card" data-reveal data-delay="200">
+              <div class="card-icon">🤷</div>
+              <div>
+                <h4>"I don't earn enough to save"</h4>
+                <p>You don't need a big salary. You need a system. Even loose change, saved consistently, adds up to real money over time.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION ===== -->
+    <section id="solution" class="section">
+      <div class="container">
+        <div class="text-center" data-reveal>
+          <span class="section-tag">The Solution</span>
+          <h2 class="section-title">Meet SaveUp — saving on autopilot.</h2>
+          <p class="section-sub">
+            We make saving invisible, automatic, and genuinely painless.
+            No spreadsheets. No guilt. Just money quietly building up in the background.
+          </p>
+        </div>
+
+        <div class="solution-grid">
+          <div class="solution-card" data-reveal data-delay="0">
+            <div class="card-num">01</div>
+            <span class="card-emoji">🔄</span>
+            <h3>Automatic Round-Ups</h3>
+            <p>Every purchase gets rounded up to the nearest dollar. Paid $3.60 for a coffee? We save $0.40 without you lifting a finger.</p>
+          </div>
+          <div class="solution-card" data-reveal data-delay="100">
+            <div class="card-num">02</div>
+            <span class="card-emoji">⚖️</span>
+            <h3>Even Amount Rule</h3>
+            <p>When a purchase lands on a whole dollar, we save a flat $0.50 instead. No exceptions, no gaps — every transaction saves something.</p>
+          </div>
+          <div class="solution-card" data-reveal data-delay="200">
+            <div class="card-num">03</div>
+            <span class="card-emoji">🎯</span>
+            <h3>Goal-Based Saving</h3>
+            <p>Set a goal — new headphones, a weekend trip, a gift — and watch your round-ups fill it up. Seeing progress makes it actually fun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAROUSEL / GALLERY ===== -->
+    <section id="gallery" class="section carousel-section">
+      <div class="container">
+        <div class="text-center" data-reveal>
+          <span class="section-tag">Real Life Savings</span>
+          <h2 class="section-title">SaveUp fits into your world.</h2>
+          <p class="section-sub">Every purchase, every coffee run, every grocery trip — quietly building your savings, one cent at a time.</p>
+        </div>
+        <div class="carousel-wrapper" data-reveal data-delay="100">
+          <div class="carousel-track" id="carousel-track">
+
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200&q=80&auto=format&fit=crop" alt="Coffee shop" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Round-Up</span>
+                <p class="slide-caption">☕ $4.75 coffee &rarr; <strong>+$0.25 saved</strong></p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&q=80&auto=format&fit=crop" alt="Grocery shopping" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Round-Up</span>
+                <p class="slide-caption">🛒 $23.40 groceries &rarr; <strong>+$0.60 saved</strong></p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80&auto=format&fit=crop" alt="Online shopping" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Even Amount Rule</span>
+                <p class="slide-caption">🛍️ $30.00 purchase &rarr; <strong>+$0.50 saved</strong></p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80&auto=format&fit=crop" alt="Mobile payment" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Instant &amp; Automatic</span>
+                <p class="slide-caption">📱 Saved instantly — <strong>no effort required</strong></p>
+              </div>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?w=1200&q=80&auto=format&fit=crop" alt="Savings goal" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Your Goal</span>
+                <p class="slide-caption">🏆 Round-ups &rarr; <strong>Real money. Real goals.</strong></p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next slide">&#8250;</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <div class="text-center" data-reveal>
+          <span class="section-tag">How It Works</span>
+          <h2 class="section-title">Four steps to effortless savings.</h2>
+          <p class="section-sub">
+            Set it up once and forget it. SaveUp runs quietly in the background,
+            building your balance one purchase at a time.
+          </p>
+        </div>
+
+        <div class="steps-wrapper">
+          <div class="step" data-reveal data-delay="0">
+            <div class="step-bubble">
+              🔗
+              <span class="step-num">1</span>
+            </div>
+            <h4>Link Your Card</h4>
+            <p>Connect your debit or credit card securely. We use bank-level encryption — your info stays safe.</p>
+          </div>
+          <div class="step" data-reveal data-delay="100">
+            <div class="step-bubble">
+              🛍️
+              <span class="step-num">2</span>
+            </div>
+            <h4>Shop Normally</h4>
+            <p>Go about your life. Buy your coffee, order takeout, do your grocery run. Nothing changes on your end.</p>
+          </div>
+          <div class="step" data-reveal data-delay="200">
+            <div class="step-bubble">
+              💸
+              <span class="step-num">3</span>
+            </div>
+            <h4>We Round Up</h4>
+            <p>After each transaction, SaveUp calculates your round-up and moves it automatically into your SaveUp balance.</p>
+          </div>
+          <div class="step" data-reveal data-delay="300">
+            <div class="step-bubble">
+              🏆
+              <span class="step-num">4</span>
+            </div>
+            <h4>Cash Out Anytime</h4>
+            <p>Your savings are yours. Transfer them to your bank whenever you're ready — no minimums, no fees, no drama.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHO IT'S FOR ===== -->
+    <section id="who-its-for" class="section">
+      <div class="container">
+        <div class="text-center" data-reveal>
+          <span class="section-tag">Who It's For</span>
+          <h2 class="section-title">If you spend money, SaveUp is for you.</h2>
+          <p class="section-sub">
+            There's no income requirement. No minimum balance. If you've ever wished
+            you were better at saving — here's your unfair advantage.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card" data-reveal data-delay="0">
+            <div class="audience-icon purple">🎓</div>
+            <div>
+              <h3>Students</h3>
+              <p>Living on a tight budget? SaveUp works with what you've got. Even $20 saved from coffee round-ups is $20 you didn't have before.</p>
+            </div>
+          </div>
+          <div class="audience-card" data-reveal data-delay="100">
+            <div class="audience-icon blue">💼</div>
+            <div>
+              <h3>Young Professionals</h3>
+              <p>You earn enough but somehow never manage to save. SaveUp removes the decision entirely — money moves before you even notice.</p>
+            </div>
+          </div>
+          <div class="audience-card" data-reveal data-delay="200">
+            <div class="audience-icon orange">👨‍👩‍👧</div>
+            <div>
+              <h3>Teens & First-Timers</h3>
+              <p>Building the savings habit early is the single best financial move. SaveUp is the most painless way to start — no lectures required.</p>
+            </div>
+          </div>
+          <div class="audience-card" data-reveal data-delay="300">
+            <div class="audience-icon pink">🌟</div>
+            <div>
+              <h3>Anyone with a Goal</h3>
+              <p>Vacation fund, emergency stash, new tech, a birthday gift — if you've got something to save for, SaveUp gets you there quietly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LAUNCH COUNTDOWN ===== -->
+    <section id="launch" class="countdown-section">
+      <div class="container">
+        <div class="countdown-inner">
+          <span class="section-tag cd-tag">Launching July 9, 2026</span>
+          <h2 class="section-title cd-title">The wait is almost over.</h2>
+          <p class="cd-sub">SaveUp goes live on <strong>July 9th, 2026</strong>. Get early access now and be among the first to start saving automatically — completely free.</p>
+          <div class="countdown-grid">
+            <div class="cd-block">
+              <span class="cd-num" id="cd-days">00</span>
+              <label class="cd-label">Days</label>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block">
+              <span class="cd-num" id="cd-hours">00</span>
+              <label class="cd-label">Hours</label>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block">
+              <span class="cd-num" id="cd-minutes">00</span>
+              <label class="cd-label">Minutes</label>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block">
+              <span class="cd-num" id="cd-seconds">00</span>
+              <label class="cd-label">Seconds</label>
+            </div>
+          </div>
+          <a href="#cta" class="btn-primary">Secure Your Spot →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section id="cta">
+      <div class="container">
+        <div class="cta-inner">
+          <span class="section-tag" style="background:rgba(34,197,94,0.15); color:#4ade80;">Early Access</span>
+          <h2 class="section-title">Ready to save without the effort?</h2>
+          <p class="section-sub">
+            Join thousands of people quietly building up cash — one round-up at a time.
+            Drop your email and we'll let you in first.
+          </p>
+          <form class="cta-form" id="cta-form" novalidate>
+            <input
+              type="email"
+              id="cta-email"
+              placeholder="your@email.com"
+              required
+              aria-label="Email address"
+            />
+            <button type="submit" class="btn-primary">
+              Get Early Access →
+            </button>
+          </form>
+          <p class="cta-note">No spam. No credit card. Just early access. 🔒</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <div class="logo-icon">💰</div>
+          SaveUp
+        </div>
+        <ul class="footer-links">
+          <li><a href="#problem">The Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#who-its-for">Who It's For</a></li>
+        </ul>
+        <p class="footer-copy">© 2026 SaveUp. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="public/script.js"></script>
+</body>
+</html>
