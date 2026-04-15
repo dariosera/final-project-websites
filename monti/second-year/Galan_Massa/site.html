@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+    <nav id="sidebar">
+        <div class="logo">Spark<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" onclick="chiudiMenu()"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#sezione2" onclick="chiudiMenu()"><i class="fas fa-layer-group"></i> Prestiti</a></li>
+            <li><a href="#sezione3" onclick="chiudiMenu()"><i class="fas fa-images"></i> Marketplace</a></li>
+            <li><a href="#sezione4" onclick="chiudiMenu()"><i class="fas fa-users"></i> Chi Siamo</a></li>
+            <li><a href="#sezione5" onclick="chiudiMenu()"><i class="fas fa-envelope"></i> Contatti</a></li>
+        </ul>
+    </nav>
+
+    <button id="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i> Menu</button>
+
+    <main>
+        <section id="home">
+            <div class="decorazione-sfondo scuro"></div>
+            <div class="decorazione-sfondo chiaro"></div>
+            
+            <div class="spazio-centrale fade-in">
+                <h1>Usa <span class="highlight">Usato</span></h1>
+                <h1>Usa <span class="highlight">Spark</span></h1>
+                <h2 class="slogan">Riusa e condividi</h2>
+                <a href="#sezione2" class="btn-primario">Prendi in prestito qualcosa...</a>
+            </div>
+            <div class="descrizione fade-in">
+                <p>Sfrutta il nostro servizio di condivisione di oggetti di seconda mano peer-to-peer. Ricerca oggetti nel nostro mercatino dell'usato. Usa l'Usato!</p>
+            </div>
+        </section>
+
+        <section id="sezione2">
+            <div class="sezione-header fade-in">
+                <h2>Prendi in prestito</h2>
+                <p>Contatta altri utenti con il nostro sistema di chat peer-to-peer.</p>
+            </div>
+            
+            <div class="grid-container">
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3></h3>
+                    <p>testo</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3></h3>
+                    <p>testo</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3></h3>
+                    <p>Testo</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sezione3">
+            <div class="sezione-header fade-in">
+                <h2>Marketplace</h2>
+                <p>Compra dal nostro mercatino dell'usato. Non c'è bisogno di visitare quello del tuo paese, usa il nostro!</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <img src="https://static.vecteezy.com/ti/vettori-gratis/p1/4141669-nessuna-foto-o-immagine-vuota-icona-caricamento-immagini-o-mancante-immagine-segno-immagine-non-disponibile-o-immagine-in-arrivo-segno-semplice-natura-silhouette-in-frame-illustrazione-vettore-isolato-vettoriale.jpg" alt="Progetto 1">
+                    <div class="portfolio-overlay">
+                        <h3>oggetto</h3>
+                        <p>descrizione</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <img src="https://static.vecteezy.com/ti/vettori-gratis/p1/4141669-nessuna-foto-o-immagine-vuota-icona-caricamento-immagini-o-mancante-immagine-segno-immagine-non-disponibile-o-immagine-in-arrivo-segno-semplice-natura-silhouette-in-frame-illustrazione-vettore-isolato-vettoriale.jpg" alt="Progetto 2">
+                    <div class="portfolio-overlay">
+                        <h3>oggetto</h3>
+                        <p>descrizione</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <img src="https://static.vecteezy.com/ti/vettori-gratis/p1/4141669-nessuna-foto-o-immagine-vuota-icona-caricamento-immagini-o-mancante-immagine-segno-immagine-non-disponibile-o-immagine-in-arrivo-segno-semplice-natura-silhouette-in-frame-illustrazione-vettore-isolato-vettoriale.jpg" alt="Progetto 3">
+                    <div class="portfolio-overlay">
+                        <h3>oggetto</h3>
+                        <p>descrizione</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sezione4">
+            <div class="sezione-header fade-in">
+                <h2>Chi Siamo</h2>
+                <p>Due studenti intenzionati ad aprire un sito web.</p>
+            </div>
+            <div class="about-content fade-in">
+                <p>Il nostro obiettivo è quello di creare un sito di condivisione di hobby, oggettistica varia e molte altre cose usate, ma mantenute perlomeno in buone condizioni. Da noi potrai anche comprare oggetti usati ed eventualmente ricondizionati.</p>
+            </div>
+        </section>
+
+        <section id="sezione5">
+            <div class="sezione-header fade-in">
+                <h2>Contatti</h2>
+                <p>Scrivici per richiedere assistenza e segnalare eventuali bug.</p>
+            </div>
+            <div class="contact-container">
+                <div class="card info-contatti fade-in">
+                    <h3>I nostri recapiti</h3>
+                    <p><i class="fas fa-envelope"></i> sparksupport@libero.it</p>
+                    <p><i class="fas fa-phone"></i> +39 ...</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Via ...</p>
+                </div>
+                <form class="contact-form fade-in">
+                    <input type="text" placeholder="Il tuo nome" required>
+                    <input type="email" placeholder="La tua email" required>
+                    <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
+                    <button type="button" class="btn-primario">Invia Messaggio</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="site.js"></script>
+</body>
+</html>
