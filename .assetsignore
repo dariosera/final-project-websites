@@ -1,3 +1,5 @@
+.git/
+.wrangler/
 *.mp4
 *.mp3
 *.mov
