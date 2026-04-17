@@ -5,3 +5,4 @@ compatibility_date = "2026-04-14"
 directory = "."
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
+exclude = ["**/*.mp4", "**/*.mp3", "**/*.mov", "**/*.avi", "**/*.mkv", "**/*.webm"]
