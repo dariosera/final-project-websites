@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eccomi – Connect, Help, Grow</title>
+  <link rel="stylesheet" href="eccomi.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo" onclick="showPage('home')">
+        <span class="logo-mark">◉</span> Eccomi
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('browse')">Find Help</a></li>
+        <li><a href="#" onclick="showPage('home'); scrollToHow()">How it works</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-ghost" onclick="openModal('login')">Log in</button>
+        <button class="btn-primary" onclick="openModal('signup')">Join Eccomi</button>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== PAGES ====== -->
+  <main id="appMain">
+
+    <!-- ====== HOME PAGE ====== -->
+    <section class="page active" id="page-home">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-blob blob1"></div>
+        <div class="hero-blob blob2"></div>
+        <div class="hero-content">
+          <span class="hero-tag">🌱 For students & neighbours</span>
+          <h1 class="hero-title">Your community,<br><em>your independence.</em></h1>
+          <p class="hero-sub">Eccomi connects students aged 16–25 with locals who need a hand — babysitting, tutoring, gardening, and more. Safe, simple, local.</p>
+          <div class="hero-cta">
+            <button class="btn-primary btn-large" onclick="openModal('signup')">Get started free</button>
+            <button class="btn-outline btn-large" onclick="showPage('browse')">Browse helpers</button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>Students</strong><span>earn locally</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>Adults</strong><span>find trusted help</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>Community</strong><span>grows together</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="card-float card-f1">
+            <div class="cf-avatar" style="background:#c8e6c9;">🌿</div>
+            <div class="cf-info"><strong>Marco, 19</strong><span>Gardening · Turin</span></div>
+            <div class="cf-badge available">Available</div>
+          </div>
+          <div class="card-float card-f2">
+            <div class="cf-avatar" style="background:#fff3e0;">📚</div>
+            <div class="cf-info"><strong>Sofia, 22</strong><span>Tutoring · Milan</span></div>
+            <div class="cf-badge available">Available</div>
+          </div>
+          <div class="card-float card-f3">
+            <div class="cf-avatar" style="background:#e3f2fd;">💻</div>
+            <div class="cf-info"><strong>Luca, 17</strong><span>Tech Help · Rome</span></div>
+            <div class="cf-badge busy">Busy today</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <div class="section how-section" id="how-section">
+        <div class="section-inner">
+          <span class="section-label">Simple process</span>
+          <h2 class="section-title">How Eccomi works</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-icon">✍️</div>
+              <h3>Create your profile</h3>
+              <p>Sign up as a student or a neighbour in need. Set your skills, your area, and your availability.</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+              <div class="step-icon">🔍</div>
+              <h3>Browse or be found</h3>
+              <p>Adults search for the help they need. Students get discovered by locals who trust verified profiles.</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+              <div class="step-icon">🤝</div>
+              <h3>Connect & schedule</h3>
+              <p>Use the built-in agenda to set gig times. Everyone stays organised and nothing gets missed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gig categories -->
+      <div class="section categories-section">
+        <div class="section-inner">
+          <span class="section-label">What's on offer</span>
+          <h2 class="section-title">Browse by category</h2>
+          <div class="category-grid">
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Babysitting')">
+              <span class="cat-icon">👶</span>
+              <span class="cat-label">Babysitting</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Tutoring')">
+              <span class="cat-icon">📚</span>
+              <span class="cat-label">Tutoring</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Gardening')">
+              <span class="cat-icon">🌿</span>
+              <span class="cat-label">Gardening</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Cleaning')">
+              <span class="cat-icon">🧹</span>
+              <span class="cat-label">Cleaning</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Tech Help')">
+              <span class="cat-icon">💻</span>
+              <span class="cat-label">Tech Help</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Pet Care')">
+              <span class="cat-icon">🐾</span>
+              <span class="cat-label">Pet Care</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Errands')">
+              <span class="cat-icon">🛍️</span>
+              <span class="cat-label">Errands</span>
+            </div>
+            <div class="cat-card" onclick="showPage('browse'); filterCategory('Cooking')">
+              <span class="cat-icon">🍳</span>
+              <span class="cat-label">Cooking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust section -->
+      <div class="section trust-section">
+        <div class="trust-inner">
+          <div class="trust-text">
+            <span class="section-label">Why Eccomi</span>
+            <h2 class="section-title">Built on trust</h2>
+            <p>We know adults worry about welcoming strangers into their homes. That's why every student profile is verified, every review is real, and every interaction is transparent.</p>
+            <ul class="trust-list">
+              <li>✅ Age-verified profiles (min. 16 years)</li>
+              <li>✅ Community reviews after every gig</li>
+              <li>✅ Transparent schedules & availability</li>
+              <li>✅ Local focus — your neighbourhood first</li>
+            </ul>
+            <button class="btn-primary" onclick="openModal('signup')">Join your community</button>
+          </div>
+          <div class="trust-visual">
+            <div class="review-card">
+              <div class="rv-stars">★★★★★</div>
+              <p>"Marco helped with my garden every Saturday for a month. Reliable, polite, and did a wonderful job!"</p>
+              <div class="rv-author">
+                <div class="rv-avatar">G</div>
+                <div><strong>Giovanna</strong><span>Turin</span></div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="rv-stars">★★★★★</div>
+              <p>"Sofia tutored my son in maths before his exams. He passed with distinction. Highly recommended!"</p>
+              <div class="rv-author">
+                <div class="rv-avatar" style="background:var(--terracotta-light);">R</div>
+                <div><strong>Roberto</strong><span>Milan</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="logo"><span class="logo-mark">◉</span> Eccomi</span>
+            <p>Bridging students and communities across Italy.</p>
+          </div>
+          <div class="footer-links">
+            <strong>Platform</strong>
+            <a href="#" onclick="showPage('browse')">Find helpers</a>
+            <a href="#" onclick="openModal('signup')">Join as student</a>
+            <a href="#" onclick="openModal('signup')">Join as adult</a>
+          </div>
+          <div class="footer-links">
+            <strong>Company</strong>
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="footer-copy">© 2025 Eccomi · Made with care for local communities</div>
+      </footer>
+
+    </section>
+
+    <!-- ====== BROWSE PAGE ====== -->
+    <section class="page" id="page-browse">
+      <div class="browse-header">
+        <h1>Find a helper near you</h1>
+        <p>Browse student profiles and connect with someone you can trust.</p>
+      </div>
+
+      <div class="browse-body">
+        <!-- Filters -->
+        <aside class="filters-panel">
+          <h3>Filter</h3>
+          <div class="filter-group">
+            <label>Category</label>
+            <select id="filterCat" onchange="applyFilters()">
+              <option value="">All categories</option>
+              <option value="Babysitting">👶 Babysitting</option>
+              <option value="Tutoring">📚 Tutoring</option>
+              <option value="Gardening">🌿 Gardening</option>
+              <option value="Cleaning">🧹 Cleaning</option>
+              <option value="Tech Help">💻 Tech Help</option>
+              <option value="Pet Care">🐾 Pet Care</option>
+              <option value="Errands">🛍️ Errands</option>
+              <option value="Cooking">🍳 Cooking</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>City</label>
+            <input type="text" id="filterCity" placeholder="e.g. Turin" oninput="applyFilters()" />
+          </div>
+          <div class="filter-group">
+            <label>Availability</label>
+            <select id="filterAvail" onchange="applyFilters()">
+              <option value="">Any</option>
+              <option value="available">Available now</option>
+              <option value="weekends">Weekends only</option>
+              <option value="weekdays">Weekdays</option>
+            </select>
+          </div>
+          <button class="btn-ghost full-w" onclick="resetFilters()">Clear filters</button>
+        </aside>
+
+        <!-- Cards grid -->
+        <div class="students-grid" id="studentsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROFILE PAGE ====== -->
+    <section class="page" id="page-profile">
+      <div class="profile-wrap" id="profileWrap">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- ====== DASHBOARD PAGE ====== -->
+    <section class="page" id="page-dashboard">
+      <div class="dashboard-wrap">
+        <div class="dash-sidebar">
+          <div class="dash-user-card" id="dashUserCard"></div>
+          <nav class="dash-nav">
+            <button class="dash-nav-btn active" onclick="switchDashTab('overview', this)">📊 Overview</button>
+            <button class="dash-nav-btn" onclick="switchDashTab('agenda', this)">📅 My Agenda</button>
+            <button class="dash-nav-btn" onclick="switchDashTab('profile-edit', this)">✏️ Edit Profile</button>
+          </nav>
+          <button class="btn-ghost full-w mt-auto" onclick="logout()">Log out</button>
+        </div>
+        <div class="dash-main" id="dashMain">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== MODALS ====== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="eccomi.js"></script>
+</body>
+</html>

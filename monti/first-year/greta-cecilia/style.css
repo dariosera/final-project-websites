@@ -1,0 +1,193 @@
+.container{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 200px 2050px 200px;
+}
+@media (max-width:500px) {
+.container{
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 60vh 20vh;
+
+
+}
+header{
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+main{
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+footer{
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+aside{
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.post{
+     grid-row-start: 5;
+    grid-row-end: 5;
+}
+.post2{
+     grid-row-start: 4;
+    grid-row-end: 4;
+}
+}
+
+header{
+    grid-column: span 2;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-image: url(download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+aside{
+    background-color:rgb(166, 190, 209);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+
+}
+#menu2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+
+}
+footer{
+    grid-column: span 2;
+    background-color: rgb(132,184,219) ;
+}
+.video-preview {
+    border: 10px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 20px;
+    width: 500px;
+  background-image:url(seashell.jpg);
+  background-size: cover;
+  position:relative;
+  height:100px;
+  width: 200px;
+  
+}
+.play-icon{
+  background-image: url("https://dgta.li/fuux27");
+  background-size: cover;
+  position:absolute;
+  width:50px;
+  height:50px;
+  left: 70px;
+  top: 35px;
+  color: rgba(255, 0, 0, 0.562);
+  }
+.video-preview2{
+    border: 10px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 20px;
+    width: 500px;
+  background-image:url(IMG_3735.jpg);
+  background-size: cover;
+  position:relative;
+  height:100px;
+  width: 200px;
+  top:-140px;
+  left:250px;
+}
+.play-icon2{
+  background-image: url("https://dgta.li/fuux27");
+  background-size: cover;
+  position:absolute;
+  width:50px;
+  height:50px;
+  left: 70px;
+  top: 35px;
+  color: rgba(255, 0, 0, 0.562);
+  }
+.menu3{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    top: -250px;
+    left:-150px;
+
+}
+.post{
+border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 2%;
+    width: 92%;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(166,190,209);
+    font-family: 'Times New Roman';
+    display: flex;
+    gap: 405px;
+
+
+}
+.post2{
+    justify-items: center;
+    border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 20px;
+    width: 600px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    position: relative;
+    left:25%;
+}
+.post3{
+border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 2%;
+    width: 92%;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(166,190,209);
+    font-family: 'Times New Roman';
+    display: flex;
+    gap:445px;
+}
+.text1 {
+ font-family: 'Playfair Display',serif;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+text-align: center;
+color: white;
+position: relative;
+top: 100px;
+left:-1100px ;
+}
+.text2 {
+ font-family: 'Playfair Display',serif;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    position: relative;
+top: 80px;
+left:-1100px ;
+}
+.ig{
+    position: relative;
+    top: -270px;
+    right:-700px;
+}
+
+
+
+

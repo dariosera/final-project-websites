@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-template-rows: 60px 1900px;
+}
+.header {
+    grid-column: span 2;
+    background-color: #a4ffff;
+}
+#menu1 {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    background-color:rgb(224, 243, 248) ;
+    align-items: center;    
+    gap: 30px;             
+}
+.media-lato {
+    flex: 1;
+    max-width: 300px;    
+    height: auto;
+}
+div{
+    padding: 20px;
+}
+p{
+   width: 80%;
+   padding-left: 50px;
+}
+.sidebar {
+    background-color: rgb(214, 245, 226);
+    position: relative;
+}
+h1 {
+    padding-left: 50px;
+}
+h2 {
+    padding-left: 50px;
+}
+.video {
+    padding-left: 50px;
+}
+.img {
+    padding-left: 20px;
+    padding-top: 0%;
+}

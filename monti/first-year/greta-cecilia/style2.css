@@ -1,0 +1,122 @@
+.container{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 200px 1800px;
+}
+@media (max-width:500px) {
+.container{
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 60vh 20vh;
+
+
+}
+header{
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+main{
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+aside{
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.post{
+     grid-row-start: 5;
+    grid-row-end: 5;
+}
+.post2{
+     grid-row-start: 4;
+    grid-row-end: 4;
+}
+}
+
+header{
+    grid-column: span 2;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-image: url(download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+aside{
+    background-color:rgb(166, 190, 209);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+#menu2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+
+}
+.form{
+    justify-items: center;
+    border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 2%;
+    width: 50%;
+    height: 300px;
+    position: relative;
+    left: 25%;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(166,190,209);
+    font-family: 'Times New Roman';
+
+}
+.about-us{
+    justify-items: center;
+    border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 2%;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    left: 25%;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(166,190,209);
+    font-family: 'Times New Roman';
+
+}
+.icons{
+    justify-items: center;
+    border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 2%;
+    width: 50%;
+    height: 300px;
+    position: relative;
+    left: 25%;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(166,190,209);
+    font-family: 'Times New Roman';
+
+}
+.foto1{
+    justify-items: center;
+    border: 20px solid;
+    border-color: rgba(6, 6, 68, 0.767);
+    margin: 2%;
+    width: 79%;
+    height: 300px;
+    position: relative;
+    left: 10%;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(166,190,209);
+    display: flex;
+    gap: 80px;
+
+}

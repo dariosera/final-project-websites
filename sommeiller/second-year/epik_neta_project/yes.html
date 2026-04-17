@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>I.S.T.G. - It's Study Time, GO!</title>
+    <link rel="stylesheet" href="yes.css">
+    <script defer src="yes.js"></script>
+</head>
+<body>
+
+    <!-- PARTE SOPRA, COUNTDOWN, LOGO, BURGER menu -->
+    <div class="riga-sopra">
+
+        <!-- COUNTDOWN -->
+        <div class="top-countdown">
+            <h4>Countdown</h4>
+            <div id="countdown-display">--</div>
+        </div>  <!-- si troverà al CENTRO -->
+
+        <!-- LOGO E NOME -->
+        <div class="top-logo">
+            <div class="header-logo-frame">
+                <img src="Senza_titolo_40_20260408225159.png" alt="Logo I.S.T.G">
+            </div>
+
+            <div class="logo-title">
+                <h1>I.S.T.G. !</h1>
+                <p class="stands-for">It's Study Time, GO!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BURGER MENU -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Apri menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <!-- Dentro al menu -->
+    <nav class="nav-menu" id="nav-menu" aria-hidden="true">
+        <a href="#Problem-and-Solution">Why can't I study</a>
+        <a href="#what-tomato-timer">What is a tomato timer</a>
+        <a href="#slider-section">Gallery</a>
+    </nav>
+
+
+    <!-- PROBLEM AND SOLUTION -->
+    <section class="Problem-and-Solution" id="Problem-and-Solution">
+        <h2 class="intro-title">Why can't I study?</h2>
+
+        <p class="intro-problem">
+            I can't do anything because all of my e-friends keep on DMing me all day long!  
+            And I can't ignore them of course!!  
+            Ugh... what am I going to do...
+        </p>
+
+        <p class="intro-solution">
+            WORRY NOT DEAR HUMAN!  
+            We, from the <strong> I.S.T.G.</strong> team, are HERE to help YOU study!  
+            Just click the button right there and it will start a Tomato timer!
+        </p>
+    </section>
+
+
+    <main>
+
+        <!-- IMPORTANTEFD -->
+        <section class="timer-section" id="timer-section">
+            <h2>Tomato Timer Session</h2>
+
+            <div class="timer-display" id="timer-display">25:00</div>
+
+            <button class="start-btn" id="start-btn">Start Tomato Session</button>
+        </section>
+
+
+        <section class="what-tomato-timer" id="what-tomato-timer">
+            <h3>What is a Tomato Timer?</h3>
+            <p> It's a technique that alternates periods of intense work (usually 25 minutes) with short breaks.
+                Very useful for organizing study sessions into focused blocks.
+            </p>
+        </section>
+
+        <!-- SLIDER -->
+        <section class="slider-section" id="slider-section">
+            <h2>Gallery</h2>
+
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <img src="immagine futura" alt="Slide 1">
+                    <img src="immagine futura" alt="Slide 2">
+                    <img src="immagine futura" alt="Slide 3">
+                </div>
+            </div>
+
+            <div class="slider-buttons">
+                <button id="prev-btn">◀</button>
+                <button id="next-btn">▶</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

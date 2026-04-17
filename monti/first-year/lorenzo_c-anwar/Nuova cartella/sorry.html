@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodio non disponibile | NyxStream</title>
+    <style>
+        /* --- Base Styles --- */
+        body, html {
+            background-color: #0b0c2a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* --- Navigation --- */
+        .navbar {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            padding: 5px 40px;
+            background: #070720;
+            border-bottom: 2px solid #e83e8c;
+            box-shadow: 0 0 15px rgba(232, 62, 140, 0.2);
+            z-index: 10;
+        }
+
+        .logo {
+            justify-self: start;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 55px;
+            width: auto;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: radial-gradient(circle at center, #161748 0%, #0b0c2a 100%);
+        }
+
+        .error-card {
+            background: #070720;
+            border: 2px solid #e83e8c;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 850px;
+            width: 95%;
+            box-shadow: 0 0 50px rgba(232, 62, 140, 0.15);
+            position: relative;
+        }
+
+        .error-content-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* Colonna Testo */
+        .error-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .icon-container {
+            font-size: 3.5rem;
+            color: white;
+            text-shadow: 0 0 10px #e83e8c, 0 0 20px #e83e8c;
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 0 0 15px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0px #e83e8c;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #d1d1e0;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .sub-message {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: #e83e8c;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Colonna Immagine (Sasuke) */
+        .error-image {
+            flex: 0 0 320px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .error-image img {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 10px rgba(232, 62, 140, 0.3));
+        }
+
+        /* Bottoni */
+        .btn-home {
+            display: inline-block;
+            padding: 14px 40px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid #e83e8c;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-home:hover {
+            background-color: #e83e8c;
+            box-shadow: 0 0 30px #e83e8c;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .error-content-wrapper {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .error-text {
+                text-align: center;
+            }
+            .error-image {
+                flex: 0 0 auto;
+                width: 200px;
+            }
+            body { overflow-y: auto; }
+        }
+
+        footer {
+            padding: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #4a4b7c;
+            background: #070720;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logosigma.png" alt="NyxStream Logo">
+        </a>
+    </nav>
+
+    <main class="container">
+        <div class="error-card">
+            <div class="error-content-wrapper">
+                
+                <div class="error-text">
+                    <div class="icon-container">!</div>
+                    <h1>SORRY!</h1>
+                    <p>
+                       The episode isn't available yet. If you have a subscripption to the main website we recommend, you can watch it there, for now. .<br>
+                    </p>
+                    <a href="index.html" class="btn-home">Return home</a>
+                </div>
+
+                <div class="error-image">
+                    <!-- Assicurati che il nome del file sia corretto -->
+                    <img src="crying.png" alt="Sasuke Crying">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 NyxStream - Altro Mondo Streaming Project
+    </footer>
+
+</body>
+</html>

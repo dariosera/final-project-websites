@@ -1,0 +1,370 @@
+/* --- 1. Base Styles --- */
+body, html {
+    background-color: #0b0c2a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- 2. Navigation (FIXED: Con nuovo Logo Grafico) --- */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Mantiene logo a sx, link al centro, login a dx */
+    align-items: center;
+    padding: 5px 40px; /* Ridotto il padding verticale per compensare l'altezza del logo */
+    background: #070720;
+    border-bottom: 2px solid #e83e8c;
+}
+
+/* Container per il logo immagine */
+.logo { 
+    justify-self: start; 
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px; /* Altezza ottimale per far leggere bene "STREAM" sotto il monitor */
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+}
+
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    transition: 0.3s; 
+}
+
+.login-link { 
+    justify-self: end; 
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: 1px solid rgba(232, 62, 140, 0.5);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .login-link a:hover { 
+    color: #e83e8c; 
+    border-color: #e83e8c; 
+}
+/* --- 3. Main Layout Containers --- */
+.main-content, .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 200px);
+}
+
+.page-title { text-align: center; color: #e83e8c; margin-bottom: 10px; }
+.intro-text { text-align: center; color: #ccc; margin-bottom: 40px; }
+
+/* --- 4. Boxes (Hero, About, Form) --- */
+/* Stili comuni per tutti i box, tranne Hero Box */
+.about-box, .form-box {
+    background: rgba(26, 27, 58, 0.95);
+    padding: 40px;
+    border: 2px solid #e83e8c;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* --- MODIFICATO: Hero Box più grande --- */
+.hero-box {
+    background: rgba(26, 27, 58, 0.95);
+    padding: 60px; /* Aumentato il padding interno */
+    border: 2px solid #e83e8c;
+    border-radius: 25px; /* Angoli leggermente più morbidi */
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px; /* MODIFICATO: Larghezza massima aumentata da 450px a 600px */
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Ombra più definita */
+}
+
+.form-box h2 {
+    color: #e83e8c;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.form-box input, .form-box textarea {
+    background: #070720;
+    border: 1px solid #333;
+    color: white;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-box input:focus {
+    border-color: #e83e8c;
+    outline: none;
+}
+
+/* --- 5. THE CATALOG GRID --- */
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #1a1b3a;
+    border: 1px solid #e83e8c;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center; /* Assicura che i volti siano centrati */
+    border-bottom: 1px solid #e83e8c;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #ddd;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* --- 6. Buttons --- */
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Stili per tutti i bottoni, tranne .big-btn */
+.card-buttons a, .btn-submit {
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background: #e83e8c;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover { background: #ff00ff; }
+
+/* --- MODIFICATO: Bottoni di scelta Hero più grandi --- */
+.big-btn {
+    padding: 20px; /* MODIFICATO: Padding aumentato per un bottone più spesso */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px; /* Angoli più definiti per i bottoni grandi */
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    font-size: 1.1rem; /* MODIFICATO: Testo leggermente più grande */
+    margin-bottom: 10px; /* Spazio tra i bottoni */
+}
+
+.big-btn:hover {
+    background: #e83e8c;
+    border-color: #e83e8c;
+    transform: scale(1.03); /* Piccolo effetto di ingrandimento all'hover */
+}
+
+.btn-link { color: #f47521; border: 1px solid #f47521; }
+.btn-streaming { color: #00ffcc; border: 1px solid #00ffcc; }
+.btn-info { color: white; border: 1px solid rgba(255, 255, 255, 0.5); }
+
+/* --- 7. Footer --- */
+.social-footer {
+    background: #070720;
+    padding: 40px 20px;
+    border-top: 2px solid #e83e8c;
+    text-align: center;
+}
+
+.disclaimer-text { font-size: 0.75rem; color: #888; margin-bottom: 15px; }
+.footer-links-container { display: flex; justify-content: center; gap: 20px; }
+.social-icon { width: 24px; height: 24px; filter: brightness(0) invert(1); }
+
+/* --- FIX: Copertura Totale senza tagli eccessivi --- */
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: fill; /* Forza l'immagine a stirarsi e riempire TUTTO il box */
+    border-bottom: 2px solid #e83e8c;
+    display: block;
+}
+
+/* Se l'effetto "stirato" non ti piace, usa questo invece: */
+/*
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center 20%; 
+}
+*/
+/* --- 5. Pagina Errore: NyxStream Sorry Page --- */
+
+/* Container principale che centra la card nella pagina */
+.container-error {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(circle at center, #161748 0%, #0b0c2a 100%);
+    min-height: 80vh;
+}
+
+/* La Card che contiene testo e immagine */
+.error-card {
+    background: #070720;
+    border: 2px solid #e83e8c;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 850px;
+    width: 95%;
+    box-shadow: 0 0 50px rgba(232, 62, 140, 0.15);
+    position: relative;
+}
+
+/* Wrapper Flex per mettere Sasuke a lato del testo */
+.error-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Colonna Testo */
+.error-text {
+    flex: 1;
+    text-align: left;
+}
+
+.icon-container {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 0 0 10px #e83e8c, 0 0 20px #e83e8c;
+    margin-bottom: 10px;
+    
+}
+
+.error-text h1 {
+    font-size: 2.8rem;
+    margin: 0 0 15px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 0px #e83e8c;
+}
+
+/* Colonna Immagine (Sasuke) */
+.error-image {
+    flex: 0 0 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.error-image img {
+    max-width: 100%;
+    height: auto;
+    /* Effetto ombra rosa per integrare Sasuke nel tema */
+    filter: drop-shadow(0 0 15px rgba(232, 62, 140, 0.4));
+}
+
+/* Bottone Torna alla Home */
+.btn-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #e83e8c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-home:hover {
+    background-color: #e83e8c;
+    box-shadow: 0 0 30px #e83e8c;
+    transform: translateY(-3px);
+}
+
+
+
+/* Responsive: se lo schermo è piccolo, Sasuke va sopra il testo */
+@media (max-width: 768px) {
+    .error-content-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .error-text {
+        text-align: center;
+    }
+    .error-image {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+}
+/* --- Pagina Streaming Re:Zero --- DA FARE!!!!!*/

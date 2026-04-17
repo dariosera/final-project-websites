@@ -1,0 +1,91 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff69b4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header p {
+    color: gray;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 260px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}

@@ -1,0 +1,166 @@
+/* REGOLE BASE */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+/* SFONDI */
+.home-bg {
+  background-image: url('hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.dark-bg {
+  background-color: #141414;
+  min-height: 100vh;
+}
+
+/* BARRA DI NAVIGAZIONE */
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-bar {
+  background-color: #333333;
+  border: 1px solid #555555;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+/* CONTENITORE PRINCIPALE */
+.container {
+  padding-top: 150px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+h1 { 
+  font-size: 50px; 
+}
+
+.hero-text {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* GRIGLIA ANIME */
+.anime-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.anime-card {
+  background-color: #222222;
+  padding: 20px;
+  border: 1px solid #444444;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.anime-card:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+.anime-thumb {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* SOCIAL SEZIONI */
+.social-list {
+  margin-top: 30px;
+}
+
+.social-icon-box {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.social-icon-box:hover {
+  background-color: red;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* BOTTONI */
+.btn {
+  background-color: red;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* PAGINA ABOUT E FEEDBACK */
+.about-box {
+  background-color: #222222;
+  padding: 50px;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.input-box {
+  background-color: #333333;
+  padding: 15px;
+  margin: 10px auto;
+  width: 90%;
+  border: 1px solid #555555;
+  border-radius: 10px;
+  text-align: left;
+  color: #aaaaaa;
+}
+
+.input-large {
+  height: 100px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 750px) {
+  .anime-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-bar {
+    display: none;
+  }
+}

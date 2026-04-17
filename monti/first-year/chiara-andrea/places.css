@@ -1,0 +1,348 @@
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 30% 30%;
+    height: 150vh;
+    margin: 0;
+}
+header {
+    grid-column: span 2;
+    background-color: rgba(0, 116, 170, 0.827);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    position: relative;
+}
+
+#home {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*EUROPE CSS*/
+
+#europe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+#content1 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: rgba(0, 116, 170, 0.827);
+    grid-column: span 2;
+}
+
+#content3 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#place {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+}
+#place_description {
+    grid-column: 2 / 3;
+    padding: 20px;
+    align-self: center;
+}
+
+#button {
+    grid-column: 3 / 4;
+    justify-self: end;
+    align-self: end;
+    margin: 20px;
+}
+
+
+/*ASIA CSS*/
+
+#asia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+#content1 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color:rgba(0, 116, 170, 0.827);
+    grid-column: span 2;
+}
+
+#content3 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#place {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+}
+
+#place_description {
+    grid-column: 2 / 3;
+    padding: 20px;
+    align-self: center;
+}
+
+/*NORTH AMERICA CSS*/
+
+#northamerica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;      
+}
+
+#content1 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: rgba(0, 116, 170, 0.827);
+    grid-column: span 2;
+}
+
+#content3 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#place {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+}
+
+#place_description {
+    grid-column: 2 / 3;
+    padding: 20px;
+    align-self: center;
+}
+
+/*SOUTH AMERICA CSS*/
+#southamerica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;      
+}
+
+#content1 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: rgba(0, 116, 170, 0.827);
+    grid-column: span 2;
+}
+
+#content3 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#place {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+}
+
+#place_description {
+    grid-column: 2 / 3;
+    padding: 20px;
+    align-self: center;
+}
+
+/*AFRICA CSS*/
+
+#africa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;      
+}
+
+
+#content1 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: rgba(0, 116, 170, 0.827);
+    grid-column: span 2;
+}
+
+#content3 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#place {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+}
+
+#place_description {
+    grid-column: 2 / 3;
+    padding: 20px;
+    align-self: center;
+}
+
+/*OCEANIA CSS*/
+#oceania {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;      
+}
+
+
+#content1 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#content2 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: rgba(0, 116, 170, 0.827);
+    grid-column: span 2;
+}
+
+#content3 {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-rows: 100%;
+    height: 45vh;
+    background-color: paleturquoise;
+    grid-column: span 2;
+}
+
+#place {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    height: 200px;
+    width: auto;
+}
+
+#place_description {
+    grid-column: 2 / 3;
+    padding: 20px;
+    align-self: center;
+}

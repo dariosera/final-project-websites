@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travel Website">
+    <meta name="keywords" content="Travel, Travel idea, Trip, Spring, Winter, Trekking, City, Mountains ">
+    <meta name="author" content="Giancale Davide, Penzo Leonardo">
+    <title>Triply©</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="container_org">
+
+        <header class="header_org"> 
+            <img src="img\Triply.png" alt="Triply logo" id="logo">
+            <details class="nav-details">
+                <summary>☰</summary>
+                <nav class="nav-menu">
+                    <a href="homepage.html">Home</a>
+                    <a href="organize_your_trip.html">Organize your trip</a>
+                    <!-- aggiungere il collegamento alle altre pagine sia nella home page, SIA QUI -->
+                    <a href="our_travels.html">Our travels</a>
+                    <a href="about_us.html">About us</a>
+                </nav>
+            </details>
+        </header>
+
+        <main id="content1_organize">
+                <div class="tripcard" id="Amalfi">
+                    <h3>ITALY</h3>
+                    <img src="img/amalfi_coast_text.png" alt="Amalfi Coast text" id="amalfi_coast_text">
+                    <img src="img/program_amalfi.png" alt="Amalfi Coast program" id="amalfi_program">
+                </div>
+
+                <div class="tripcard" id="Bali">
+                    <h3>INDONESIA</h3>
+                    <img src="img/bali_text.png" alt="Bali text" id="bali_text">
+                    <img src="img/program_bali.png" alt="Bali program" id="bali_program">
+                </div>
+
+                <div class="tripcard" id="Santorini">
+                    <h3>GREECE</h3>
+                    <img src="img/santorini_text.png" alt="Santorini text" id="santorini_text">
+                    <img src="img/program_santorini.png" alt="Santorini program" id="santorini_program">
+                </div>
+
+                <div class="tripcard" id="Iceland">
+                    <h3>ICELAND</h3>
+                    <img src="img/iceland_text.png" alt="Iceland text" id="iceland_text">
+                    <img src="img/program_iceland.png" alt="Iceland program" id="iceland_program">
+                </div>
+
+                <div class="tripcard" id="Canada">
+                    <h3>NORTH AMERICA</h3>
+                    <img src="img/canada_text.png" alt="Canada text" id="canada_text">
+                    <img src="img/program_canada.png" alt="Canada program" id="canada_program">
+                </div>
+
+                <div class="tripcard" id="Patagonia">
+                    <h3>SOUTH AMERICA</h3>
+                    <img src="img/patagonia_text.png" alt="Patagonia text" id="patagonia_text">
+                    <img src="img/program_patagonia.png" alt="Patagonia program" id="patagonia_program">
+                </div>
+
+        </main>
+
+        <main id="content2_organize">
+            <form id="trip_form">
+                <h2>Plan your trip</h2>
+                <p>Fill in your details and let us help you organize your perfect adventure.</p>
+
+                <label>First Name</label>
+                <input type="text" name="name" placeholder="Enter your first name">
+
+                <label>Last Name</label>
+                <input type="text" name="surname" placeholder="Enter your last name">
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email">
+
+                <label>Destination</label>
+                <select name="destination">
+                    <option value="culodituamadre">####</option>
+                    <option value="Paris">####</option>
+                    <option value="Rome">####</option>
+                    <option value="London">####</option>
+                    <option value="Torino">####</option>
+                    <option value="Garlasco">####</option>
+                </select>
+
+                <label>Departure Date</label>
+                <input type="date" name="departure_date">
+
+                <label>Return Date</label>
+                <input type="date" name="return_date">
+
+                <label>Number of Travelers</label>
+                <input type="number" name="travelers" min="1" max="10" placeholder="1">
+
+                <label>Additional Notes</label>
+                <textarea name="notes" rows="5" placeholder="Tell us your preferences..."></textarea>
+
+                <button type="submit">Send Request</button>
+            </form>
+
+        </main>
+
+        <footer> 
+            <p id="gianmarco">Triply© 2026, All rights reserved. Giancale Davide, Penzo Leonardo</p>
+                <div class="social_links">
+                    <a href="https://www.instagram.com/il.gianca__?igsh=OTdhOHBsbHUwY2Vz&utm_source=qr" target="_blank" class="insta_link">
+                        <img src="img\instagram_logo.png" alt="Instagram Davide Giancale"> Giancale Davide
+                    </a>
+                    <a href="https://www.instagram.com/leonardo.penzoo?igsh=MTdkNmxpNTJxZ2kwYw%3D%3D&utm_source=qr" target="_blank" class="insta_link">
+                        <img src="img\instagram_logo.png" alt="Instagram Leonardo Penzo"> Penzo Leonardo
+                    </a>
+                </div>
+        </footer>
+
+    </div>
+</body>
+</html>

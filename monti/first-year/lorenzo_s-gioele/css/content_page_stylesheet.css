@@ -1,0 +1,445 @@
+@font-face {  /*to connect the font to the code*/
+  font-family: 'Font'; 
+  src: url('Fonts/inter.woff2') format('woff2')
+  }
+
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 110% 5%;
+    min-height: 100vh; /*to let the page go beyond the screen*/
+    width: 100vw;
+    background: radial-gradient(circle, #3b3258, #21183b, #171717);/*gradient background color*/
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; /*if the site doesn't load the first font, it shows sans-serif and not his default font*/
+    color: #FFFFFF;
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: radial-gradient(circle, #3b3258, #21183b, #171717);
+    padding: 5px 0;
+}
+
+#logo {
+    width: 230px;
+    height: auto;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer; /*the cursor becomes a hand when it's over the hamburger*/
+}
+
+#hamburger {
+    position: relative; /*read #nav-list*/
+    margin-right: 40px;
+}
+
+#nav-list {
+    position: absolute;
+    height: 100vh;
+    width: 70vw;
+    padding: 20px;
+    margin-right: -30px;
+    margin-top: -50px;
+    gap: 25px;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+#nav-cross {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#nav-list li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /*to add space between menu items*/
+}
+
+#menu-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.menu-subitem {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#stuck-text a {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+main {
+    margin-top: 30px;
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    margin: auto 6vw auto 6vw;
+}
+
+.checkbox-good {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, #3b3258, #21183b, #171717); /*to emulate the background color*/
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.checkbox-bad {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, #3b3258, #21183b, #171717);
+    border-radius: 20px;
+}
+
+.checkbox-group {
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 30px 60px 30px;
+}
+
+.checkbox-good h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0 30px 0;
+    color: #ffffff;
+    background-color: rgb(0, 33, 152, 0.6);
+    padding: 15px 0;
+    margin: 30px 30px;
+    border-radius: 20px;
+}
+
+.checkbox-bad h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0 30px 0;
+    color: #ffffff;
+    background-color: rgb(152, 0, 0, 0.6);
+    padding: 15px 0;
+    margin: 30px 30px;
+    border-radius: 20px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+.option {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    accent-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.2);
+}
+
+.checkbox-good .checkbox-group {
+    background-color: rgb(0, 33, 152, 0.6);
+}
+
+.checkbox-bad .checkbox-group {
+    background-color: rgb(152, 0, 0, 0.6);
+}
+
+h3 {
+    display: inline-block;
+    font-size: 24px;
+    background: radial-gradient(circle, #3b3258, #21183b, #171717);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+
+.checkbox-item label {
+    font-size: 21px;
+}
+
+.checkbox-icon {
+    width: 30px;
+    height: auto;
+    filter: brightness(0) invert(1); /*to make the icons from black to white*/
+}
+
+footer {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 30% 10% 20% 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+#socials {
+    grid-row: 1;
+    display: flex;
+    margin-left: 30px;
+    gap: 30px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#contact {
+    grid-row: 2;
+    margin-left: 30px;
+    color: black;
+}
+
+#contacts {
+    grid-row: 3;
+    margin-left: 30px;
+    line-height: 6px;
+    color: black;
+}
+
+#sign-up-text {
+    grid-row: 4;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: black;
+}
+
+#newsletter-form {
+    grid-row: 5;
+    margin-right: 10px; 
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#newsletter-email {
+    height: 25px;
+    width: 70%;
+}
+
+#newsletter-button {
+    height: 25px;
+    width: 30%;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#copyright {
+    grid-row: 6;
+    margin-left: 30px;
+    color: black;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2% 100% 5%;
+        min-height: 100vh; /*to let the page go beyond the screen*/
+        width: 100vw;
+        background: radial-gradient(circle, #3b3258, #21183b, #171717);/*gradient background color*/
+        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; /*if the site doesn't load the first font, it shows sans-serif and not his default font*/
+        color: #FFFFFF;
+    }
+
+    #nav-list {
+        position: absolute;
+        height: 100vh;
+        max-width: 20vw;
+        padding: 20px;
+        margin-right: -30px;
+        margin-top: -50px;
+        gap: 25px;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        z-index: 1;
+        border-radius: 0 0 20px 20px;
+    }
+
+    nav {
+        grid-area: 1 / 1 / 1 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: radial-gradient(circle, #3b3258, #21183b, #171717);
+        padding: 5px 0;
+    }
+
+    main {
+        margin-top: 30px;
+        grid-area: 2 / 1 / 2 / 3;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .checkboxes {
+        grid-area: 2 / 1 / 2 / 3;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        margin: auto 6vw auto 6vw;
+    }
+
+    .checkbox-good {
+        grid-area: 1 / 1 / 1 / 1;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(circle, #3b3258, #21183b, #171717); /*to emulate the background color*/
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .checkbox-bad {
+        grid-area: 1 / 2 / 1 / 3;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(circle, #3b3258, #21183b, #171717);
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .checkbox-group {
+        margin-bottom: 60px;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 20px 30px 60px 30px;
+    }
+
+    footer {
+        position: absolute;
+        grid-row: 3;
+        grid-column: 1;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 40vw 60vw;
+        grid-template-rows: 33% 33% 33%;
+        align-items: center;
+        justify-content: center;
+        margin-top: -60px;
+    }
+
+    #socials {
+        grid-area: 1 / 1 / 1 / 1;
+        display: flex;
+        margin-left: 30px;
+        gap: 30px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contact {
+        grid-area: 2 / 1 / 2 / 1;
+        margin-left: 30px;
+        color: black;
+    }
+
+    #contacts {
+        grid-area: 3 / 1 / 3 / 1;
+        margin-left: 30px;
+        line-height: 6px;
+        color: black;
+    }
+
+    #sign-up-text {
+        grid-area: 1 / 2 / 1 / 2;
+        margin-top: 20px;
+        margin-left: 30px;
+        color: black;
+    }
+
+    #newsletter-form {
+        grid-area: 2 / 2 / 2 / 2;
+        margin-right: 10px; 
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #newsletter-email {
+        height: 25px;
+        width: 70%;
+    }
+
+    #newsletter-button {
+        height: 25px;
+        width: 30%;
+        background-color: #000;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    #copyright {
+        grid-area: 3 / 2 / 3 / 2;
+        margin-left: 30px;
+        color: black;
+    }
+}
+
+
+
+

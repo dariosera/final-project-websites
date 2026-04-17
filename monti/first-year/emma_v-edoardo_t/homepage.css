@@ -1,0 +1,157 @@
+.title{
+    background-color: black;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: sticky;
+    top: 0% ;
+    z-index: 50;
+    width: 100vw;
+    justify-content: center;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    
+    
+}
+body{
+    /*defining the structure of the grid*/
+    display: grid;
+    grid-template-columns: 10vw 90vw ;
+    grid-template-rows: 20vh 70vh 10vh ;
+    
+
+}
+.menu{
+    background-color:rgb(235, 235, 26);
+    color: black; 
+    grid-column-start: 1;
+    grid-column-end: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    text-decoration: none;
+    display: flex;
+    text-shadow: blue; 
+    font-size: 25px;
+
+    
+}
+/*giving padding and aligning each element of the menu*/
+.home {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.content{
+    padding: 10px;
+    text-align: center;
+     text-decoration: none;
+}
+.content2{
+    padding: 10px; 
+   text-align: center;
+    text-decoration: none;
+} 
+.aboutus{
+    padding: 10px;
+    text-align: center;
+     text-decoration: none;
+}
+.main{
+    background-color: rgba(248, 248, 82, 0.9);
+}
+.stage{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    position: absolute;
+    display: inline;
+    z-index: auto;
+  
+}
+.contacts{
+    background-color: black;
+    color: white;
+    grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 3;
+   grid-row-end: 3;
+   height: 200px;
+   padding-right: 5px;
+   font-size: large;
+   
+}
+.insta{
+padding: 10px;
+    display: inline;
+    font-size: 20px;
+}
+.tiktok{
+    padding: 10px;
+    display: inline;
+    font-size: 20px;
+}
+p{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: block;
+    /*we are making sure that the text looks good and is aligned next to the picture*/
+    padding-left: 850px;
+    padding-top: 30px ;
+    border-top: 30px;
+   font-size: 40px;
+   justify-content: center;
+
+}
+/* Making the website responsive*/
+/*By the 7th of April, this @media part will NOT be finished yet.
+PLEASE do not check for the responsiveness of the website, as it will NOT work.
+Thank you!*/
+@media (max-width:500px){
+ body{
+    grid-template-rows: 10vh 10vh 40vh 30vh 10vh ;
+ }   
+ .menu{
+    grid-row-start: 2 ;
+    grid-row-end: 2 ;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: space-evenly;
+ }
+ .home,.content, .content2, .aboutus {
+display: inline;
+ }
+ .title{
+    grid-row-start: 1 ;
+    grid-row-end: 1 ;
+    grid-column: 1 3;
+ }
+ .stage{
+    grid-row: 3 3;
+    grid-column: 1 3 ;
+    width: 100vw;
+    height: 40vh;
+ }
+ p{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 20px;
+ }
+ .contacts {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+
+ }
+
+ 
+ 

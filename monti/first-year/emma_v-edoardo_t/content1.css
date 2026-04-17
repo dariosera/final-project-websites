@@ -1,0 +1,143 @@
+body {
+  /*defining the grid */
+    display: grid;
+    grid-template-rows: 10vh 400px 400px 400px ;
+    background-color:  rgba(248, 248, 82, 0.9);   
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black ;
+    color: white;
+    text-decoration: none;
+    grid-row-start: 1;
+    grid-row-end: 1 ;
+    font-size: 20px;
+    width: 100vw;
+    text-align: center;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 50px;
+    top: 0%;
+    height: 10vh;
+}
+.gracie{
+ padding-top: 20px; 
+  padding-left: 20px; 
+  display: inline;
+  grid-row-start: 2;
+grid-row-end: 2;
+}
+p {
+display: inline-flex;
+flex-direction: row;
+margin-bottom: 0%;
+padding-left: 70px;
+width: 90vw;
+font-size: 20px;
+}
+.harry{
+ padding-left: 20px; 
+  grid-row-start: 3;
+  grid-row-end: 3;
+  padding-top: 160px;
+  display: inline;
+}
+.chappell{
+    padding-left: 20px; 
+    padding-top: 280px ;
+  grid-row-start: 4;
+grid-row-end: 4;
+  display: inline;
+}
+#menu1img {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding-top: 20px;
+grid-row-start: 2;
+grid-row-end: 2;
+}
+a {
+  display: inline;
+  padding-right: 5px;
+}
+#menu2img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#menu3img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+p :last-child {
+  margin-bottom: 50px;
+}
+
+@media (max-width:500px) {
+  body {
+    display: grid;
+    grid-template-rows: 10vh 80vh 20vh 80vh 20vh 80vh 20vh;
+  }
+  #menu1img >img :first-child {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  }
+  #menu2img >img :first-child {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  }
+  #menu3img >img :first-child {
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  }
+  #menu1img >img :nth-child(2) {
+    display: none;
+  }
+  #menu1img >img :last-child {
+   display: none; 
+  }
+  #menu2img >img :nth-child(2) {
+    display: none;
+  }
+  #menu2img >img :last-child {
+    display: none;
+  }
+  #menu3img >img :nth-child(2) {
+    display: none;
+  }
+  #menu3img >img :last-child {
+    display: none;
+  }
+  .gracie >p {
+   grid-row-start: 3;
+   grid-row-end: 3;
+   width: 80vw;
+   height: 20vh;
+  }
+  .harry >p {
+   grid-row-start: 5;
+   grid-row-end: 5;
+   width: 80vw;
+   height: 20vh;
+  }
+  .chappell >p {
+   grid-row-start: 7;
+   grid-row-end: 7;
+   width: 80vw;
+   height: 20vh;
+  }
+}

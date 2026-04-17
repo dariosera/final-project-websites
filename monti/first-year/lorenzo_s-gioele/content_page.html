@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>habits</title>
+    <link rel="stylesheet" href="css/content_page_stylesheet.css">
+</head>
+<body>
+    <nav>
+        <a href="homepage.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+        <div id="hamburger">
+            <details>
+                <summary>
+                    <img src="assets/hamburger-menu.png" alt="Hamburger">
+                </summary>
+                <ul id="nav-list">
+                    <img src="assets/cross.png" alt="Cross" id="nav-cross">
+                    <li id="menu-title"><a href="#">Menu</a></li>
+                    <li class="menu-subitem"><a href="homepage.html">Home</a></li>
+                    <li class="menu-subitem"><a href="content_page.html">Daily tracker</a></li>
+                    <li class="menu-subitem"><a href="#">Contact a professional</a></li>
+                    <li class="menu-subitem"><a href="#">Support us</a></li>
+                    <li id="stuck-text"><a href="#">You're stuck here ahahah (reload)</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+    <main>
+        <div class="checkboxes">
+            <div class="checkbox-good"><!--good habits-->
+                <h2>Good habits</h2>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Awakening</h3> 
+                        <img class="checkbox-icon" src="assets/wake-up.png" alt="Wake up icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Hydrate with a big glass of water</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Let some sunlight in</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Make the bed</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Quick stretch or mobility flow</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Leave the phone alone for 30 minutes</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Brush your teeth</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Morning</h3> 
+                        <img class="checkbox-icon" src="assets/morning.png" alt="Morning icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Eat a high-protein breakfast</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Knock out your toughest task first</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Take a short walk outside</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Review your to-do list</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Fresh coffee or tea brew</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Lunch</h3> 
+                        <img class="checkbox-icon" src="assets/lunch.png" alt="Lunch icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Step away from the screen</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Eat mindfully without distractions</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Include some veggies and proteins</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">A few minutes of deep breathing</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Afternoon</h3> 
+                        <img class="checkbox-icon" src="assets/sunset.png" alt="Afternoon icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Power through the remaining chores</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Remember to drink enough water</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Take a "brain break" away from your desk</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Healthy snack to beat the slump</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Brief workout or light movement</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Dinner time</h3> 
+                        <img src="assets/lunch.png" alt="Meal icon" class="checkbox-icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Keep it balanced and nourishing</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Stay in company or let your thoughts go</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Clean the dishes right away</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Bedtime</h3> 
+                        <img class="checkbox-icon" src="assets/sleep.png" alt="Sleep icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Read a physical book</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Write down three good things happened</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Fix some tasks to be done tomorrow</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Live a total tech blackout before bed</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Brush your teeth</label>
+                    </div>  
+                </div>                                                            
+            </div>
+
+            <div class="checkbox-bad"><!--bad habits-->
+                <h2>Bad habits</h2>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Awakening</h3> 
+                        <img class="checkbox-icon" src="assets/wake-up.png" alt="Wake up icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Wake up too late</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Leave the bedroom untidy</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Immediately check the notifications or social media</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Keep wearing pyjamas</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Do everything in a hurry</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Ignore self-care</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Morning</h3> 
+                        <img class="checkbox-icon" src="assets/morning.png" alt="Morning icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Skip breakfast or eat junk food</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Avoid physical activity</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Have an unplanned day upcoming</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Be forgetful before leaving home</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Prefer social isolation instead of dialogue</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Lunch</h3> 
+                        <img class="checkbox-icon" src="assets/lunch.png" alt="Lunch icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Have a quick and incomplete meal</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Eat too much before getting back to work</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Be always late for your plans</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Procrastinate your tasks out of laziness</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Afternoon</h3> 
+                        <img class="checkbox-icon" src="assets/sunset.png" alt="Afternoon icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Smoke or drink alcohol</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Unhealthy snack</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Forget to drink enough water and being dehydrated</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Stay seated for a long time without brief breaks</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Forget to brush your teeth at least one time during the whole day</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Dinner time</h3> 
+                        <img src="assets/lunch.png" alt="Meal icon" class="checkbox-icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Have a heavy meal</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Stay alone and watch a movie while eating</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Leave all the dishes dirt and stacked</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-heading">
+                        <h3>Bedtime</h3> 
+                        <img class="checkbox-icon" src="assets/sleep.png" alt="Sleep icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option1">Go to bed very late</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option2">Ignore your last tasks</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option3">Watch bright screens and spend a lot of time on your phone</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option4">Fall asleep on uncomfortable couches</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="option" name="scelta">
+                        <label for="option5">Have an irregular sleep and wake up often during night</label>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="socials">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+            <img src="assets/facebook.png" alt="Facebook" class="social-icon">
+            <img src="assets/tik-tok.png" alt="TikTok" class="social-icon">
+            <img src="assets/telegram.png" alt="Telegram" class="social-icon">
+            <img src="assets/youtube.png" alt="YouTube" class="social-icon">
+        </div>
+        <div id="contacts">
+            <p>+39 353.429.5948</p>
+            <p>+39 375.640.4173</p>
+            <p>habits.inc@gmail.com</p>
+        </div>
+        <p id="sign-up-text">Sign up to our newsletter:</p>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Email Address" aria-label="Sign up to our newsletter"><!--aria-label: for accessibility-->
+            <button type="submit" id="newsletter-button">Sign up</button>
+        </form>
+        <div id="contact">
+            <p><a href="">Contact us</a></p>
+        </div>
+        <div id="copyright">
+            <p>© 2026 Habits Inc. All rights reserved.</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
